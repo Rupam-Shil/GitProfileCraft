@@ -1,0 +1,25 @@
+.error {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.heading {
+	font-size: 48px;
+	span {
+		color: var(--text-secondary);
+	}
+}
+.subheading {
+	margin-top: 1rem;
+	font-weight: 400;
+}
+.btns {
+	margin-top: 2rem;
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+}

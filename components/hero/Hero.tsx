@@ -3,6 +3,7 @@ import style from './hero.module.scss';
 import PrimaryButton from '../buttons/PrimaryButton';
 import SecondaryButton from '../buttons/SecondaryButton';
 import HeroInput from '../hero-input/HeroInput';
+import HeroButton from './HeroButton';
 function Hero() {
 	return (
 		<div className={style.hero}>
@@ -15,8 +16,7 @@ function Hero() {
 			</p>
 			<HeroInput />
 			<div className={style.btns}>
-				<PrimaryButton>Generate Profile</PrimaryButton>
-				<SecondaryButton>Create Your Own</SecondaryButton>
+				<HeroButton />
 			</div>
 		</div>
 	);

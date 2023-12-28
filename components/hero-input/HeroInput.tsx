@@ -2,8 +2,12 @@
 import React, { useState } from 'react';
 import style from './hero-input.module.scss';
 import { CaretRight } from '@phosphor-icons/react/dist/ssr';
+import useUserSearch from '@/store/useUserSearch';
 function HeroInput() {
-	const [userName, setUserName] = useState<string>('');
+	const { userName, setUserName } = useUserSearch((state) => ({
+		userName: state.userName,
+		setUserName: state.setUserName,
+	}));
 	return (
 		<div className={style['hero-input']}>
 			<div className={style['hero-input-con']}>

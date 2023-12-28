@@ -1,0 +1,54 @@
+.hero {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	min-height: 80vh;
+	position: relative;
+	isolation: isolated;
+	&::before {
+		content: '';
+		position: absolute;
+		inset: 0;
+		background: linear-gradient(83.21deg, #3245ff 0%, #bc52ee 100%);
+		mask-image: radial-gradient(rgba(0, 0, 0, 0.45), transparent 70%);
+		-webkit-mask-image: radial-gradient(rgba(0, 0, 0, 0.45), transparent 70%);
+		z-index: -1;
+	}
+}
+.hero-header {
+	font-size: 48px;
+	text-align: center;
+	max-width: 700px;
+	line-height: 120%;
+	font-weight: 600;
+	span {
+		color: var(--text-secondary);
+		position: relative;
+		display: inline-block;
+		isolation: isolate;
+		&::before {
+			content: 'GitHub profile';
+			position: absolute;
+			letter-spacing: 120%;
+			inset: 0;
+			filter: blur(10px);
+			z-index: -1;
+		}
+	}
+}
+.hero-subheader {
+	margin-top: 1.2rem;
+	font-size: 18px;
+	text-align: center;
+	font-weight: 400;
+}
+.btns {
+	margin-top: 2rem;
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	flex-wrap: wrap;
+}

@@ -1,0 +1,22 @@
+.btn {
+	--_background: var(--white);
+	--_color: var(--text-secondary);
+	--hover-background: #e1e1e1;
+	outline: none;
+	border-radius: 100vmax;
+	padding: 16px 24px;
+	border: none;
+	cursor: pointer;
+	font-size: 18px;
+	color: var(--_color);
+	background: var(--_background);
+	transition: 0.2s ease;
+	&:hover {
+		background: var(--hover-background);
+	}
+}
+.secondary-btn {
+	--_background: var(--text-secondary);
+	--_color: var(--white);
+	--hover-background: #273ae4;
+}

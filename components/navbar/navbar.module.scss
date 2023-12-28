@@ -1,0 +1,13 @@
+.navbar {
+	padding: 20px 40px;
+	font-size: 24px;
+	font-weight: 700;
+	border-bottom: 1px solid var(--border-color);
+	font-weight: var(--secondary-font);
+	position: sticky;
+	top: 0px;
+	background: var(--bg-color);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}

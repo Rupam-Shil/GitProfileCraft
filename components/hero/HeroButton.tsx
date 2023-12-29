@@ -20,7 +20,9 @@ function HeroButton() {
 			<PrimaryButton onClick={handleGenerateProfile}>
 				Generate Profile
 			</PrimaryButton>
-			<SecondaryButton>Create Your Own</SecondaryButton>
+			<SecondaryButton onClick={() => router.push('/create-profile')}>
+				Create Your Own
+			</SecondaryButton>
 		</>
 	);
 }

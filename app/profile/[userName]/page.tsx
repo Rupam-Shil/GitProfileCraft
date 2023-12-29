@@ -54,7 +54,7 @@ const fetchUserRepoDetails = async <T,>(url: string): Promise<ApiResult<T>> => {
 		const headers: HeadersInit = new Headers();
 		headers.append('Accept', 'application/vnd.github.v3+json');
 		headers.append('Authorization', `${process.env.GITHUB_AUTH}`);
-		const response = await fetch(url + '?per_page=100', {
+		const response = await fetch(url + '?per_page=300', {
 			cache: 'force-cache',
 			headers,
 		});

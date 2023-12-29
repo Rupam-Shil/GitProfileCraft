@@ -4,12 +4,17 @@ import {
 	GithubFullResponse,
 	GithubUserDetails,
 } from '@/types/github_user_response';
+import { redirect } from 'next/navigation';
+import Loading from './loading';
 
 export default async function Page({
 	params,
 }: {
 	params: { userName: string };
 }) {
+	if (params.userName == '') {
+		redirect('/');
+	}
 	const userData = await fetchUserGithubData<GithubFullResponse>(
 		params.userName
 	);

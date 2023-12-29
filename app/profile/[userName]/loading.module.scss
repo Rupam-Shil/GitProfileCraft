@@ -1,0 +1,23 @@
+.loading {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+	&::before {
+		content: '';
+		position: absolute;
+		inset: 0px;
+		background: linear-gradient(83.21deg, #3245ff 0%, #bc52ee 100%);
+		mask-image: radial-gradient(rgba(0, 0, 0, 0.45), transparent 70%);
+		-webkit-mask-image: radial-gradient(rgba(0, 0, 0, 0.45), transparent 70%);
+		z-index: -1;
+	}
+	.text {
+		margin-top: 1rem;
+		font-size: 20px;
+		text-align: center;
+	}
+}

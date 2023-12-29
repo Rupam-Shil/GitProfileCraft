@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@lottiefiles/react-lottie-player": "^3.5.3",
     "@phosphor-icons/react": "^2.0.15",
     "axios": "^1.6.3",
     "next": "14.0.4",

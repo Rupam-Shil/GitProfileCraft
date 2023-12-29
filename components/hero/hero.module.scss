@@ -5,7 +5,7 @@
 	flex-direction: column;
 	min-height: 80vh;
 	position: relative;
-	isolation: isolated;
+	isolation: isolate;
 	&::before {
 		content: '';
 		position: absolute;

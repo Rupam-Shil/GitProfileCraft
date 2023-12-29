@@ -4,7 +4,7 @@ import styles from './error.module.scss';
 import PrimaryButton from '@/components/buttons/PrimaryButton';
 import SecondaryButton from '@/components/buttons/SecondaryButton';
 import { useRouter } from 'next/navigation';
-function error({ reset }: { reset: () => void }) {
+function Error({ reset }: { reset: () => void }) {
 	const router = useRouter();
 	return (
 		<div className={`${styles.error} square-bg`}>
@@ -24,4 +24,4 @@ function error({ reset }: { reset: () => void }) {
 	);
 }
 
-export default error;
+export default Error;

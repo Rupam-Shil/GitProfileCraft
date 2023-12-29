@@ -1,8 +1,10 @@
 .profilemd {
 	padding: 1rem;
 	word-break: break-all;
-	overflow: scroll;
-	height: 100%;
+	background-color: rgb(35 38 45 / 1);
+	border-radius: inherit !important;
+	height: 95vh;
+	overflow: scroll !important;
 	&::-webkit-scrollbar {
 		display: none;
 	}
@@ -18,4 +20,10 @@
 	margin-top: 1rem;
 	border: 1px solid #1e2026;
 	border-collapse: collapse;
+}
+@media only screen and (max-width: 900px) {
+	.profilemd {
+		height: 500px;
+		width: calc(100vw - 40px);
+	}
 }
